@@ -2,9 +2,9 @@ import React from "react";
 import { Menu, Button } from "antd";
 
 const items = [
-    { key: "2", label: "Tide" },
-    { key: "3", label: "Weather" },
-    { key: "4", label: "Wind" },
+    { key: "2", label: "Thủy triều" },
+    { key: "3", label: "Thời tiết" },
+    { key: "4", label: "Gió" },
 ];
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
                     type="primary"
                     shape="round"
                 >
-                    Login
+                    Đăng nhập
                 </Button>
             </div>
         </div>

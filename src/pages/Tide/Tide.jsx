@@ -34,8 +34,8 @@ const Tide = () => {
                 }}
             >
                 <Card>
-                    <Row gutter={[10, 0]} className={"w-full"}>
-                        <Col span={4}>
+                    <Row gutter={[10, 10]} className={"w-full"}>
+                        <Col xs={24} md={6}>
                             <Form.Item
                                 label="Địa điểm"
                                 name="place"
@@ -49,21 +49,21 @@ const Tide = () => {
                                     }}
                                     placeholder="Chọn một địa điểm"
                                     options={countryData}
-                                    style={{ width: 200 }}
+                                    style={{ width: '100%' }}
                                 />
                             </Form.Item>
                         </Col>
-                        <Col span={4}>
+                        <Col xs={24} md={6}>
                             <Form.Item
                                 label="Ngày"
                                 name="date"
                                 rules={[{ required: true, message: 'Vui long chọn ngày!' }]}
                             >
-                                <DatePicker format={dateFormat} />
+                                <DatePicker format={dateFormat}  style={{ width: '100%' }} />
                             </Form.Item>
                         </Col>
 
-                        <Col span={2}>
+                        <Col xs={24} md={6}>
                             <Button type="primary" htmlType="submit">Tra cứu</Button>
                         </Col>
                     </Row>
