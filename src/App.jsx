@@ -1,14 +1,14 @@
 import './App.css'
-import Demo from './components/Demo'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
+import Tide from './pages/Tide/Tide'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Dashboard />
+      <Tide />
     </>
   )
 }
