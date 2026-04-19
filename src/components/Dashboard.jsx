@@ -4,6 +4,7 @@ import TideChart from "./TideChart";
 import WindCard from "./WindCard";
 import WeatherCard from "./WeatherCard";
 import VerticalComposedChart from "./VerticalComposedChart";
+import VerticalBarChart from "./VerticalBarChart";
 
 import { formatChartData } from "../utils/FormatChartData";
 
@@ -60,6 +61,11 @@ export default function Dashboard() {
                 <h2 className="font-bold text-lg mb-2">🌊 Thủy triều</h2>
                 <VerticalComposedChart data={formatChartData(data)} />
             </div>
+            <div className="bg-white p-4 rounded-2xl shadow">
+                <h2 className="font-bold text-lg mb-2">🌊 Thủy triều</h2>
+                <VerticalBarChart  data={formatChartData(data)} />
+            </div>
+
             {/* Grid */}
             <div className="grid grid-cols-2 gap-4">
                 <WindCard />
